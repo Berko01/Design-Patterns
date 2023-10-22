@@ -10,6 +10,11 @@ public class Hospital {
         this.patientList = new ArrayList<>();
     }
 
+    public String accept(Visitor visitor){
+        return visitor.visitHospital(this);
+
+    }
+
     public void addPatient(Patient patient){
         patientList.add(patient);
     }
@@ -26,9 +31,6 @@ public class Hospital {
         return patientList;
     }
 
-    public void setPatientList(List<Patient> patientList) {
-        this.patientList = patientList;
-    }
 
     
     

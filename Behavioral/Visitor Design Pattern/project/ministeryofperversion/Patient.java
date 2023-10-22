@@ -9,6 +9,30 @@ public class Patient{
         this.ilness = ilness;
         this.condition = condition;
     }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public EnumIlness getIlness() {
+        return ilness;
+    }
+
+    public void setIlness(EnumIlness ilness) {
+        this.ilness = ilness;
+    }
+
+    public EnumPatientCondition getCondition() {
+        return condition;
+    }
+
+    public void setCondition(EnumPatientCondition condition) {
+        this.condition = condition;
+    }
     
 
 }

@@ -13,6 +13,11 @@ public class City {
     }
 
     
+    public String accept(Visitor visitor){
+        return visitor.visitCity(this);
+
+    }
+    
 
     public void addHospital(Hospital hospital){
         hospitalList.add(hospital);
@@ -25,9 +30,6 @@ public class City {
     }
     public List<Hospital> getHospitalList() {
         return hospitalList;
-    }
-    public void setHospitalList(List<Hospital> hospitalList) {
-        this.hospitalList = hospitalList;
     }
 
     

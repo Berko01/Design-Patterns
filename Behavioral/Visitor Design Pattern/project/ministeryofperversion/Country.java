@@ -11,6 +11,11 @@ public class Country {
         this.cityList = new ArrayList<>();
     }
 
+    public String accept(Visitor visitor){
+        return visitor.visitCountry(this);
+
+    }
+
     public void addCity(City city){
         cityList.add(city);
     }
@@ -23,13 +28,10 @@ public class Country {
         this.name = name;
     }
 
-    public List<City> getCity() {
+    public List<City> getCityList() {
         return cityList;
     }
 
-    public void setCity(List<City> cityList) {
-        this.cityList = cityList;
-    }
 
     
 
