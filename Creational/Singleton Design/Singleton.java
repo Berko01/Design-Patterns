@@ -8,19 +8,18 @@ public class Singleton {
 
     private Singleton() {
 
-        System.out.println("Ben olustum");
+        System.out.println("Ben olustum. SIkIyorsa bir daha olustur.");
     }
 
     public static Singleton getSingleton() {
 
-        if (singleton == null) {
             synchronized (Singleton.class) { //thread safe
                 if (singleton == null) {
                     singleton = new Singleton();
                 }
             }
 
-        }
+        
         number++;
         System.out.println();
 

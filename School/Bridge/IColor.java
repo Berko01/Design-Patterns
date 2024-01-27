@@ -1,0 +1,3 @@
+interface IColor {
+    String applyColor();
+}

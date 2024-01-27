@@ -18,7 +18,8 @@ public class App {
             termometer.setInstantTempature(BigDecimal.valueOf(i));
         }
 
-        for(int i= termometer.getInstantTempature().intValue(); i<=22; i--){
+        for(int i= termometer.getInstantTempature().intValue(); i>20; i--){
+            System.out.println("hata burada mi");
             termometer.setInstantTempature(BigDecimal.valueOf(i));
         }
 
